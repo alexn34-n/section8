@@ -1,0 +1,12 @@
+
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to AlexBank accounts related production APIs "
+  contactDetails:
+    name: "Rick Simon - Product Owner"
+    email: "{cipher}85790f3024b6b49064fb433335d58f97844c7c0c22ba8768beb4d242b5cbff02371eda536f0ee767c1bdf679262ab89f"
+  onCallSupport:
+    - (453) 392-4829
+    - (236) 203-0384

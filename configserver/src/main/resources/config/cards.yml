@@ -1,0 +1,12 @@
+
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to AlexBank cards related local APIs "
+  contactDetails:
+    name: "Dan Korn - Developer"
+    email: "dancorn@eazybank.com"
+  onCallSupport:
+    - (412) 419-3491
+    - (915) 382-1932
