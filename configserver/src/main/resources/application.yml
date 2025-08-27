@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: "https://github.com/alexn34-n/v2-spring-cloud-config.git"
+          uri: "https://github.com/alexn34-n/section8.git"
 
           default-label: develop
           timeout: 5
