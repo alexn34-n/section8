@@ -16,8 +16,8 @@ services:
       service: network-deploy-service
 
   configserver:
-    image: "alexnorden/configserver:s6"
-    container_name: configserver6-ms
+    image: "alexnorden/configserver:s8"
+    container_name: configserver8-ms
     ports:
       - "8071:8071"
     depends_on:
@@ -34,8 +34,8 @@ services:
       service: microservice-base-config
 
   accounts:
-    image: "alexnorden/accounts:s6"
-    container_name: accounts6-ms
+    image: "alexnorden/accounts:s8"
+    container_name: accounts8-ms
     ports:
       - "8080:8080"
     depends_on:
@@ -48,8 +48,8 @@ services:
       service: microservice-configserver-config
 
   loans:
-    image: "alexnorden/loans:s6"
-    container_name: loans6-ms
+    image: "alexnorden/loans:s8"
+    container_name: loans8-ms
     ports:
       - "8090:8090"
     depends_on:
@@ -62,8 +62,8 @@ services:
       service: microservice-configserver-config
 
   cards:
-    image: "alexnorden/cards:s6"
-    container_name: cards6-ms
+    image: "alexnorden/cards:s8"
+    container_name: cards8-ms
     ports:
       - "9000:9000"
     depends_on:
