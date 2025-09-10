@@ -1,11 +1,15 @@
-
 server:
-  port: 8080
+  port: 8000
+
 spring:
   application:
     name: "accounts"
   profiles:
     active: "prod"
+
+  main:
+    allow-bean-definition-overriding: true
+
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -22,9 +26,29 @@ spring:
   config:
     import: "optional:configserver:http://localhost:8071/"
 
-
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  endpoint:
+    shutdown:
+      access: unrestricted
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "accounts"
+    description: "Alex Bank Accounts Application"
+    version: "1.0.0"

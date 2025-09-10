@@ -7,27 +7,25 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.info.License;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-
-
-import static org.springframework.boot.SpringApplication.*;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-/*@ComponentScans({ @ComponentScan("com.alexbank.cards.controller") })
-@EnableJpaRepositories("com.alexbank.cards.repository")
-@EntityScan("com.alexbank.cards.model")*/
+/*@ComponentScans({ @ComponentScan("com.eazybytes.cards.controller") })
+@EnableJpaRepositories("com.eazybytes.cards.repository")
+@EntityScan("com.eazybytes.cards.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @EnableConfigurationProperties(value = {CardsContactInfoDto.class})
 @OpenAPIDefinition(
         info = @Info(
                 title = "Cards microservice REST API Documentation",
-                description = "AlexBank Cards microservice REST API Documentation",
+                description = "EazyBank Cards microservice REST API Documentation",
                 version = "v1",
                 contact = @Contact(
-                        name = "Alex",
-                        email = "alexr@alexnbank.com",
+                        name = "Mike Reddy",
+                        email = "mreddy@alexbank.com",
                         url = "https://www.alexbank.com"
                 ),
                 license = @License(
@@ -43,6 +41,6 @@ import static org.springframework.boot.SpringApplication.*;
 public class CardsApplication {
 
     public static void main(String[] args) {
-        run(CardsApplication.class, args);
+        SpringApplication.run(CardsApplication.class, args);
     }
 }

@@ -23,10 +23,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-
-
 @Tag(
-        name = "CRUD REST APIs for Cards in EazyBank",
+        name = "CRUD REST APIs for Cards in AlexBank",
         description = "CRUD REST APIs in AlexBank to CREATE, UPDATE, FETCH AND DELETE card details"
 )
 @RestController
@@ -41,6 +39,7 @@ public class CardsController {
     }
 
 
+//    @Value("${build.version}")
     private String buildVersion;
 
     @Autowired
@@ -51,7 +50,7 @@ public class CardsController {
 
     @Operation(
             summary = "Create Card REST API",
-            description = "REST API to create new Card inside EazyBank"
+            description = "REST API to create new Card inside AlexBank"
     )
     @ApiResponses({
             @ApiResponse(
