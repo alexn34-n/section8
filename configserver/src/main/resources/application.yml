@@ -9,7 +9,7 @@ spring:
       server:
 
         git:
-          uri: "https://github.com/alexn34-n/alexn-cloud-config.git"
+          uri: "https://github.com/alexn34-n/section8.git"
 
           default-label: main
           timeout: 5
