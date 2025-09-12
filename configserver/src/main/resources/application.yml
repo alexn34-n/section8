@@ -7,11 +7,9 @@ spring:
   cloud:
     config:
       server:
-        # native:
-        # search-locations: "classpath:/config"
-        # search-locations: "file:///Users//eazybytes//Documents//config"
+
         git:
-          uri: "https://github.com/alexn34-n/v2-spring-cloud-config.git"
+          uri: "https://github.com/alexn34-n/alexn-cloud-config.git"
 
           default-label: main
           timeout: 5
