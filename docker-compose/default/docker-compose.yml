@@ -66,24 +66,9 @@ services:
       file: common-config.yml
       service: microservice-eureka-config
 
-#  loans1:
-#    image: "alexnorden/loans:s8"
-#    container_name: loans-ms1
-#    ports:
-#      - "8091:8090"
-#    depends_on:
-#      configserver:
-#        condition: service_healthy
-#      eurekaserver:
-#        condition: service_healthy
-#    environment:
-#      SPRING_APPLICATION_NAME: "loans"
-#    extends:
-#      file: common-config.yml
-#      service: microservice-eureka-config
-
+#
   cards:
-    image: "eazybytes/cards:s8"
+    image: "alexnorden/cards:s8"
     container_name: cards-ms
     ports:
       - "9000:9000"
