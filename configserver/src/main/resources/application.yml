@@ -9,7 +9,7 @@ spring:
       server:
 
         git:
-          uri: "https://github.com/alexn34-n/alexbank-config.git"
+          uri: "https://github.com/alexn34-n/section8.git"
 
           default-label: main
           timeout: 5
